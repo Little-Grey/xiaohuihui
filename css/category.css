@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #eee;
+}
+.category-layout {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background: #fff;
+  margin: 0 auto;
+}
+/*头部开始*/
+.category-header {
+  position: absolute;
+  /*要让头部脱标，不然下面主体的部分，上不到来*/
+}
+.category-header form {
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+}
+.category-header form input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+/*复用的头部样式  全部用在了公共样式里面*/
+/*头部结束*/
+/*分页的主体开始*/
+.category-body {
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+}
+.category-body .body-left {
+  float: left;
+  height: 100%;
+  width: 90px;
+  overflow: hidden;
+}
+.category-body .body-left ul li a {
+  width: 90px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.category-body .body-left ul .current a {
+  color: #e92322;
+  border-right: none;
+}
+.category-body .body-right {
+  height: 100%;
+  overflow: hidden;
+  /*让盒子绝缘 和浮动的盒子没有交集*/
+  padding: 10px;
+}
+.category-body .body-right .right-in a {
+  dispaly: block;
+}
+.category-body .body-right .right-in a img {
+  width: 100%;
+}
+.category-body .body-right .hot ul {
+  padding-top: 10px;
+}
+.category-body .body-right .hot ul li {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+.category-body .body-right .hot ul li a {
+  display: block;
+  text-align: center;
+}
+.category-body .body-right .hot ul li a img {
+  width: 70px;
+}
+/*分页的主体结束*/

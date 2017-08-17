@@ -1,0 +1,297 @@
+
+/*背景图片的宽高，函数--要调用先会有作用*/
+.bgz(@w,@h){
+  -webkit-background-size:@w @h;
+          background-size:@w @h;
+}
+
+body{
+  background:#eee;
+}
+
+//设置页面移动端的
+.jd-layout{
+  max-width:640px;
+  min-width:320px;
+  background:#fff;
+  height: 1200px;
+  margin:0 auto;
+}
+
+[class^="icon-"]{
+  background:url(../images/sprites.png) no-repeat;
+  background-size:200px 200px;
+}
+
+/*头部开始*/
+.jd-header{
+  position:fixed;
+  left:0;
+  top:0;
+  height: 40px;
+  width: 100%;
+  z-index:999;
+  //background:pink;
+  .header-in{
+    //background:red;
+    max-width:640px;
+    height: 40px;
+    margin:0 auto;
+    padding: 0 50px 0 70px;
+    position:relative;
+    form{
+      width:100%;
+      height: 40px;
+      padding-top:5px;
+      position: relative;
+      input{
+        width: 100%;
+        height: 30px;
+        border-radius:15px;
+        background:#fff;
+        padding-left:30px;
+      }
+      .icon-search{
+        background-position:-59px -109px;
+        position:absolute;
+        top:10px;
+        left:10px;
+        width:20px;
+        height: 20px;
+      }
+    }
+    .icon-logo{
+      //background:url(../images/sprites.png) no-repeat 0px -103px;
+      background-position: 0px -103px;
+      //background:yellow;
+      width: 60px;
+      height: 30px;
+      position:absolute;
+      left:5px;
+      top:5px;
+      //图片太大，要压缩
+      //上面有用了所以得背景图片压缩了，
+      //background-size:200px 200px;
+    }
+    .login{
+      position:absolute;
+      right:0;
+      top:0;
+      width: 50px;
+      height: 40px;
+      text-align:center;
+      line-height:40px;
+      color:#fff;
+    }
+  }
+}
+/*头部结束*/
+
+/*轮播图开始*/
+.jd-banner{
+  width: 100%;
+  overflow:hidden;
+  position:relative;
+  ul{
+    width: 1000%;
+    -webkit-transform:translateX(-10%);   /*兼容*/
+             transform:translateX(-10%);
+      li{
+        float:left;
+        width: 10%;
+        a{
+          display:block;
+          img{
+            width: 100%;
+            display:block;
+          }
+        }
+      }
+    }
+    ol{
+      position:absolute;
+      left:50%;
+      bottom:15px;
+      -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+
+      li{
+        width: 8px;
+        height: 8px;
+        //background:yellow;
+        float:left;
+        border:1px solid #fff;
+        border-radius:50%;
+        margin-right:8px;
+      }
+      .active{
+        background:#fff;
+      }
+    }
+}
+/*轮播图结束*/
+
+/*导航栏开始*/
+.jd-nav{
+  padding:20px 0;
+  border-bottom:1px solid #ccc;
+  ul{
+    li{
+      float:left;
+      width: 25%;
+      margin-bottom:20px;
+      a{
+        display:block;
+        text-align: center;
+        img{
+          width: 40px;/*图片太大，所以要先压缩图片*/
+          height: 40px;/*图片太大，所以要先压缩图片*/
+        }
+      }
+    }
+  }
+}
+/*导航栏结束*/
+
+/*产品模块开始*/
+//盒子样式
+.jd-product{
+  background:#eee;
+  padding:10px;
+  .item{
+      background:#fff;
+    margin-bottom:20px;
+    box-shadow:0 0 5px 0 #999;
+  }
+  .item-header{
+    height: 32px;
+    border-bottom:1px solid #ccc;
+    line-height:32px;
+    h4{
+      font-weight:normal;
+      padding-left:25px;
+      position:relative;
+      &::before{
+        content:"";
+        position:absolute;
+        top:8px;
+        left:11px;
+        width: 3px;
+        height: 15px;
+        background:red;
+      }
+    }
+  }
+  .item-body{
+    >a{
+      width: 50%;
+      img{
+        width: 100%;
+        display:block;/*转为块级元素，为了图片可以跟盒子一高*/
+      }
+    }
+  }
+}
+
+//秒杀样式跟图片
+.sk{
+  .item-header{
+    .sk-logo{
+      width: 16px;
+      height: 20px;
+      background:url(../images/seckill-icon.png) no-repeat;
+      //background-size:100% 100%;
+      .bgz(100%,100%);
+      margin-top:4px;
+    }
+    .time{
+      span{
+        background:#000;
+        color:#fff;
+        width: 13px;
+        height: 15px;
+        float:left;
+        margin-top:8px;
+        text-align:center;
+        line-height: 15px;
+        margin-right:6px;
+        &:nth-child(3n){
+          background:#fff;
+          color:#000;
+          width: 2px;
+        }
+      }
+    }
+  }
+  .item-body{
+    padding:15px 0;
+    ul{
+      li{
+        float:left;
+        width: 33.33%;
+        text-align:center;
+        font-size:12px;
+        &:nth-child(2) a{
+          border-left:1px solid #ccc;
+          border-right:1px solid #ccc;
+        }
+        a{
+          display:block;
+          width: 100%;
+          img{
+            width: 60%;
+          }
+        }
+        p:nth-child(2){
+          color:red;
+        }
+        p:nth-child(3){
+          text-decoration:line-through;
+        }
+      }
+    }
+  }
+}
+/*产品模块结束*/
+
+//底部开始
+.jd-footer{
+  position:fixed;
+  left:0;
+  bottom:0;
+  height: 44px;
+  width: 100%;
+  background:#fff;
+  ul{
+    li{
+      float:left;
+      width: 25%;
+      text-align:center;
+      a{
+        /*display:block; */  /*加了这个，就会整个a里面里面都会显示小手*/
+        width: 100%;
+        img{
+          height: 44px; /*压缩*/
+        }
+      }
+    }
+  }
+}
+
+
+//底部结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

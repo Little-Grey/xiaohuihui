@@ -1,0 +1,109 @@
+/*默认样式重装*/
+* {
+  margin: 0;
+  padding: 0;
+  /*所以盒子采用內减模式  盒模型*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*去除移动移动端点击的高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*后面的都是备胎*/
+  color: #333;
+}
+a,
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  border: none;
+  outline: none;
+  /*轮廓线*/
+  /*去除移动的表单的默认样式，必须3D  阴影*/
+  -webkit-appearance: none;
+}
+/*公共样式 common  css*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+[class^="icon-"] {
+  background: url(../images/sprites.png) no-repeat;
+  -webkit-background: 200px 200px ;
+  background-size: 200px 200px;
+}
+/*复用的头部样式*/
+.toolbar {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/header-bg.png) repeat-x;
+  -webkit-background-size: 1px 44px;
+  background-size: 1px 44px;
+  padding: 0 40px;
+}
+.toolbar .icon-back,
+.toolbar .icon-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  padding: 12px 10px;
+  /*背景起始点*/
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+  /*背景裁剪*/
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  /*背景定位*/
+  background-position: -20px 0;
+}
+.toolbar .icon-menu {
+  left: auto;
+  right: 0;
+  background-position: -60px 0;
+}
