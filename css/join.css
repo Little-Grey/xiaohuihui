@@ -1,0 +1,51 @@
+/*展示图片开始*/
+.set {
+  margin-top: 20px;
+}
+.set .imgeas img {
+  width: 100%;
+  height: 100%;
+}
+/*展示图片结束*/
+/*加入我们主要内容开始*/
+.join {
+  padding-top: 2%;
+  margin-bottom: 58%;
+}
+.join .join-left {
+  margin-left: 2%;
+  text-align: center;
+  padding: 0px;
+}
+.join .join-left .join-left-matter .join-left-top {
+  width: 94%;
+  margin-left: 10px;
+}
+.join .join-left .join-left-matter .join-left-top span {
+  display: block;
+  height: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+}
+.join .join-left .join-left-matter .join-left-center {
+  margin-top: 5px;
+}
+.join .join-left .join-left-matter .join-left-center img {
+  width: 90%;
+}
+.join .join-left .join-left-matter .join-left-bottom h2 {
+  display: block;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.join .join-left .join-left-matter .join-left-bottom h3 {
+  padding: 5px 0 5px 0;
+}
+.join .join-right {
+  padding-top: 44px;
+  font-size: 14px;
+}
+/*加入我们主要内容结束*/

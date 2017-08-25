@@ -1,0 +1,112 @@
+/**/
+/*图片开始*/
+.serve {
+  width: 100%;
+  height: 100%;
+}
+.serve .serve-top {
+  padding-left: 200px;
+}
+.serve .serve-top img {
+  width: 80%;
+}
+/*图片结束*/
+/*主体内容开始*/
+.serve .serve-bottom {
+  margin-top: 70px;
+  /*产品这个装饰*/
+  /*产品下面的内容*/
+}
+.serve .serve-bottom .serve-bottom-top {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 3px;
+  background-image: url(../img/dian.png);
+  text-align: center;
+}
+.serve .serve-bottom .serve-bottom-top h3 {
+  line-height: 0px;
+  display: inline;
+  padding: 0 50px;
+  background: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  color: #333;
+  font-family: fzzhengheis-el-gbregular;
+}
+.serve .serve-bottom .serve-bottom-bottom {
+  /*包含内容的大div */
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div {
+  overflow: hidden;
+  width: 360px;
+  height: 170px;
+  /*呢个系左边描述产品的盒子*/
+  /*呢个系展示产品的图片，点击进去，就系呢个产品的内容介绍*/
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-left {
+  position: relative;
+  z-index: 999;
+  float: left;
+  background: #66B687;
+  width: 140px;
+  height: 100%;
+  /*呢个系左边描述产品名称*/
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-left .serve-bottom-bottom-div-left-info {
+  padding-top: 45px;
+  width: 100px;
+  font-size: 14px;
+  margin-left: 20px;
+  color: #fff;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-left .serve-bottom-bottom-div-left-info h4 {
+  font-size: 22px;
+  height: 40px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'fzzhengheis-el-gbregular';
+  font-weight: 400;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-left .serve-bottom-bottom-div-left-info p {
+  font-size: 12px;
+  overflow: hidden;
+  margin-top: 8px;
+  height: 32px;
+  line-height: 32px;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right {
+  float: left;
+  width: 220px;
+  height: 100%;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right .serve-bottom-bottom-div-right-content {
+  position: relative;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right .serve-bottom-bottom-div-right-content a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right .serve-bottom-bottom-div-right-content a:hover {
+  transform: translate(20px, 0px);
+  transition: transform 1s;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right .serve-bottom-bottom-div-right-content a img {
+  width: 220px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.serve .serve-bottom .serve-bottom-bottom .serve-bottom-bottom-div .serve-bottom-bottom-div-right .serve-bottom-bottom-div-right-content a ul {
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  color: #fff;
+  font-size: 14px;
+}
+/*主体内容结束*/

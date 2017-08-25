@@ -1,129 +1,339 @@
-/*默认样式重装*/
+/*css 初始化 */
 
-*{
-  margin:0;
-  padding:0;
-  /*所以盒子采用內减模式  盒模型*/
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-/*去除移动移动端点击的高亮效果*/
-  -webkit-tap-highlight-color:transparent;
-}
-body{
-  font-size:14px;
-  font-family:'Microsoft YaHei',Arial,sans-serif;/*后面的都是备胎*/
-  color:#333;
-}
-
-a,
-a:hover{
-color:#333;
-  text-decoration: none;
-}
-
-ul,ol{
-list-style:none;
-
-}
-
-input{
-  border:none;
-  outline:none;/*轮廓线*/
-  /*去除移动的表单的默认样式，必须3D  阴影*/
-  -webkit-appearance: none;
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+.row {
+    margin: 0;
+    padding: 0;
+    /*清除元素的内外边距*/
 }
 
-
-
-/*公共样式 common  css*/
-.pull-left{
-  float:left;
+fieldset,
+img,
+input,
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    /*外面环绕线*/
 }
 
-.pull-right{
-  float:right;
-}
-
-.clearfix::before,
-.clearfix::after{
-  content:"";
-  height: 0;
-  line-height: 0;
-  display: block;
-  visibility: hidden;
-  clear:both;
-}
-.clearfix{
-  zoom:1;
-}
-
-.ml-10{
-  margin-left:10px;
-}
-.mr-10{
-  margin-right:10px;
-}
-.bl{
-  border-left:1px solid #ccc;
-}
-.bl{
-  border-left:1px solid #ccc;
-}
-.br{
-  border-right:1px solid #ccc;
-}
-.bt{
-  border-top:1px solid #ccc;
-}
-.bb{
-  border-bottom:1px solid #ccc;
+ul,
+ol {
+    list-style: none;
 }
 
 
-//分页面头部的背景图片按钮
-[class^="icon-"]{
-  background:url(../images/sprites.png) no-repeat;
-  -webkit-background : 200px 200px ;
-  background-size:200px 200px;
+/*去掉原样式中的小黑点*/
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+    /*字体的自动识别*/
 }
 
-/*复用的头部样式*/
+select,
+input {
+    vertical-align: middle;
+}
 
-.toolbar{
-  width: 100%;
-  height: 44px;
-  border-bottom:1px solid #ccc;
-  background:url(../images/header-bg.png) repeat-x;
-  -webkit-background-size:1px 44px;
-  background-size:1px 44px;
-  padding:0 40px;
-  .icon-back,
-  .icon-menu{
-    position:absolute;;
-    top:0;
-    left:0;
-    width: 40px;
-    height: 44px;
-    //background:url(../images/sprites.png);/*系公共样式写了这个背景*/
-    padding:12px 10px;
-    /*背景起始点*/
-    -webkit-background-origin:content-box;
-    background-origin:content-box;
-    /*背景裁剪*/
-    -webkit-background-clip:content-box;
-    background-clip:content-box;
-
-    /*背景定位*/
-    background-position:-20px 0;
-  }
-  .icon-menu{
-    left:auto;
-    right:0;
-    background-position:-60px 0;
-  }
+// 版心
+.w{
+    width: 1100px;
+    padding:10px 40px 40px 40px;
 }
 
 
+/*输入字居中显示*/
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/**/
+
+textarea {
+    resize: none;
+    /*不可以随意拖动*/
+}
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+    /*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+    border-collapse: collapse;
+    /*合并外连线*/
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    /*unitedCode的写法，宋体的写法*/
+    color: #666;
+    /*150%基于当前字体尺寸的百分比行间距*/
+    background: #fff;
+}
+
+.clearfix:before,
+.clearfix:after {
+    /*清除浮动，最好最标准的写法*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+    /*兼容IE6下的写法*/
+}
+
+a {
+    color: #666;
+    /*a 标签是不继承颜色 的*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s,
+i,
+em {
+    /*一般是起装饰作用*/
+    font-style: normal;
+    /*去掉原有的样式*/
+    text-decoration: none;
+    /*去掉下划线或是删除线*/
+}
+
+.col-red {
+    color: #C81623 !important;
+    /*京东主色调*/
+}
+
+/*公共类*/
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+/*css初始化完成*/
+
+
+
+
+/*公共部分开始*/
+
+/*头部开始*/
+.container-header {
+    background: #666;
+    width: 100%;
+    height: 50px; // margin:0;
+    padding: 0;
+    .row {
+        margin: 0;
+        span {
+            // background:red;
+            line-height: 50px;
+            padding-left: 100px;
+            color: #eee; // color:red;
+            font-family: 'Microsoft Yahei';
+        }
+    }
+}
+/*头部结束*/
+
+
+/*logo开始*/
+.container-section {
+    width: 100%; // height: 100%;
+    padding: 0;
+    background: url(../img/33.jpg);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    .row {
+        padding: 0;
+        margin: 0;
+        .ctrl-1 {
+            // background: red;
+            padding: 0;
+            margin: 0;
+            img {
+                // float: right;
+                width: 140px;
+                height: 140px;
+                position: absolute;
+                left: 150px;
+                top: -20px;
+            }
+        }
+        .ctrl-2 {
+            padding: 0;
+            margin: 0;
+            height: 100px;
+            span {
+                color: #fff;
+                font-size: 40px;
+                line-height: 100px;
+            }
+        }
+        // .ctrl-3 {
+        //     // background: pink;
+        //     padding: 0;
+        //     margin: 0;
+        //     height: 100px;
+        //     position: relative;
+        //     i {
+        //         font-size: 60px;
+        //         width: 50px;
+        //         height: 50px; 
+        //         color: #fff;
+        //         position: absolute;
+        //         top: 40px;
+        //         left: 60px;
+        //     }
+        //     span {
+        //         position: absolute;
+        //         line-height: 60px;
+        //         color: #fff;
+        //         left: 120px;
+        //         top: 0px;
+        //         font-family: 'Microsoft Yahei';
+        //         font-size:14px;
+        //     }
+        //     p {
+        //         line-height: 100px;
+        //         color: #daa520;
+        //         position: absolute;
+        //         left: 120px;
+        //         top: 10px;
+        //         font-size: 22px;
+        //         font-family: 'Microsoft Yahei';
+        //     }
+        // }
+    }
+}
+/*logo结束*/
+
+
+/*导航开始*/
+.navbar {
+    margin-bottom:0;
+    width: 60%;
+    background:pink;
+    margin-left:20%;
+    .container-fluid {
+        padding: 0;
+        width: 100%;
+        
+        ul {
+            width: 100%;
+            li {
+                text-align: center;
+                width: 25%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                font-family: 'Microsoft Yahei';
+                a:hover{
+                    background:#E13FA6;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+/*导航结束*/
+
+
+/*底部开始*/
+.container-footer {
+    margin-top: 200px; //先定好，好了就删除
+    height: 100%;
+    background: url(../img/33.jpg);
+    width: 100%;
+    height: 180px; // position: relative;
+    .row {
+        // width: 100%;
+        .footer-top {
+            // width: 50%;
+            height: 200px;
+            padding-top: 40px;
+            p {
+                color: #fff;
+                text-align: center;
+                padding: 10px 0 0 10px;
+                font-family: 'Microsoft Yahei';
+                font-size:15px;
+            }
+        }
+        .footer-bottom {
+            // width: 50%;
+            padding-left:150px;
+            img {
+                margin-top:40px;
+                width: 120px;
+                height:120px;
+            }
+        }
+    }
+}
+/*底部结束*/
 
 
 
@@ -139,3 +349,5 @@ input{
 
 
 
+
+/*公共部分结束*/
