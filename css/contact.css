@@ -1,0 +1,58 @@
+body {
+  background: #eee;
+}
+body .yd-layout {
+  height: 630px;
+  width: 100%;
+  padding-top: 80px;
+  position: relative;
+}
+body .yd-layout .yd-zhanwei {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .yd-layout section {
+  width: 70%;
+  height: 100%;
+  /*地图*/
+}
+body .yd-layout section .left {
+  border: 1px solid pink;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+body .yd-layout section .left .left-matter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .yd-layout section .left .left-matter .left-top {
+  padding-bottom: 20px;
+}
+body .yd-layout section .left .left-matter .left-top span {
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+}
+body .yd-layout section .left .left-matter .left-bottom h2 {
+  display: block;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+body .yd-layout section .left .left-matter .left-bottom h3 {
+  padding: 5px 0 5px 0;
+}
+body .yd-layout section .right {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}

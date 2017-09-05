@@ -4,261 +4,323 @@
 <head>
     <!--设置网页编码-->
     <meta charset="utf-8">
+    <!--如果是IE浏览器，就会使用最新的IE渲染引擎来解析页面-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--移动端视口设置-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>广州市中群岳信息科技有限公司</title>
+
+    <title>壹递物流</title>
+
+    <!-- 引入壹递联盟的小logo -->
+    <link rel="shortcut icon" href="./yidi.ico" />
+
+
     <!-- Bootstrap  引入核心CSS文件 -->
-    <link rel="shortcut icon" href="senyu.ico" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/slideshow.css">
-    <!--轮播图的CSS-->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 引入swiper的css -->
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+
     <!--要引入自己的CSS文件-->
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./font/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
-
-
 
 </head>
 
 <body>
-    <!-- 广州市中群岳信息科技有限公司- -首页模块 -->
+    <!-- 大div去包裹里面的内容 -->
+    <div class="yd-layout"  id="top">
 
-    <!-- 头部开始 -->
-    <header class="container-header">
-        <div class="row">
-            <div>
-                <span>您好,欢迎来到广州市中群岳信息科技有限公司官网！</span>
-            </div>
-        </div>
-    </header>
-    <!-- 头部结束 -->
+        <!-- 壹递导航部分开始 -->
+        <nav class="navbar navbar-default ydlm-header">
+            <div class="container-fluid">
 
-    <!-- logo开始 -->
-    <section class="container-section">
-        <div class="row">
-            <div class="col-md-3 ctrl-1">
-                <img src="./img/zyq.jpg" alt="">
+                <div class="navbar-header col-md-2 hidden-xs hidden-sm">
+                    <!-- <a class="navbar-brand" href="javascript:;">放壹递联盟的logo</a> -->
+                    <a class="navbar-brand" href="javascript:;">
+                        <img src="./img/yidi.png" alt="">
+                    </a>
+
+                </div>
+
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+
+                <ul class="nav navbar-nav col-md-10" id="ydlm-header-id">
+                    <li>
+                        <a href="./index.html" id="yd-active">主页</a>
+                        <!-- <a href="javascript:;" id="yd-active">主页</a> -->
+                        <!-- <i class="bottom"></i> -->
+                    </li>
+
+                    <li>
+                        <a href="./works.html">关于作品</a>
+                        <!-- <a href="javascript:;">关于作品</a> -->
+                        <!-- <i></i> -->
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">联系我们</a>
+                        <!-- <a href="javascript:;">联系我们</a> -->
+                        <!-- <i></i> -->
+                    </li>
+                </ul>
+                <!-- </div> -->
+
             </div>
-            <div class="col-md-5 ctrl-2">
-                <span>广州市中群岳信息科技有限公司</span>
+
+        </nav>
+        <!-- 壹递导航部分结束 -->
+
+        <!-- 头部的video开始 -->
+        <header class="ydlm-baaner">
+            <video width="100%" autoplay loop>
+                <source src="./video//f8f2162157c577986c55d40b42f3d849.mp4" type=""> 抱歉，浏览器要换了！版本太低,无法看到这块的内容。
+            </video>
+            <div class="jumbotron1">
+                <p>我们让</p>
+                <span>品牌变得有意义</span>
+
+                <!-- 箭头 -->
+                <div class="ydlm-jiantou">
+                    <i><img src="./img/jiantou.gif" alt=""></i>
+                </div>
             </div>
-            <!-- <div class="col-md-4 ctrl-3">
-                <i class="iconfont">&#xe8bc;</i>
-                <span>全国质询热线：</span>
-                <p>020-36855916</p>
+        </header>
+        <!-- 头部的video结束 -->
+
+
+        <!-- 轮播图开始 -->
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide noe">
+                    <img data-src="./img/fisrtbg.jpg" alt="" class="swiper-lazy">
+                    <!-- swiper动画 -->
+                    <div class="swiper-noe ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                        <p>正在加载，请稍等......</p>
+                        <p>正在加载，请稍等......</p>
+                    </div>
+                </div>
+                <div class="swiper-slide two">
+                    <img data-src="./img/senogilvy_bg.jpg" alt="" class="swiper-lazy">
+                    <!-- swiper动画 -->
+                    <div class="swiper-two ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                        <p>正在加载，请稍等......</p>
+                        <p>正在加载，请稍等......</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide three">
+                    <img data-src="./img/Dove2.jpg" alt="" class="swiper-lazy">
+                    <!-- swiper动画 -->
+                    <div class="swiper-three ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                        <p>正在加载，请稍等......</p>
+                        <p>正在加载，请稍等......</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide four">
+                    <img data-src="./img/banner.jpg" alt="" class="swiper-lazy">
+                    <!-- swiper动画 -->
+                    <div class="swiper-four ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                        <p>正在加载，请稍等......</p>
+                        <p>正在加载，请稍等......</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+
+            <!-- <div class="swiper-left">
+                <div class="swiper-zuo">
+                    <p></p>
+                    <p></p>
+                </div>
             </div> -->
+
         </div>
-    </section>
-    <!-- logo开始结束 -->
-
-    <!-- 导航开始 -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="./index.html">中群岳首页</a></li>
-
-                <li><a href="./serve.html">产品与服务</a></li>
-                <li><a href="./join.html">加入我们</a></li>
-                <li><a href="./contact.html">联系我们</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- 导航结束 -->
+        <!-- 轮播图结束 -->
 
 
-    <!-- 轮播开始 -->
-    <section>
-        <!-- 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            </ol> -->
-        <!-- <div class="carousel-inner">
-                <div class="item active">
-                    <img src="./img/1.png">
+        <!-- 轮播图下面的第一部分内容开始 -->
+        <section>
+            <!-- 右手边的上面轮播图 -->
+            <div class="swiper-container" id="swiper2">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide noe">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide two">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide three">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide four">
+                        <div>正在加载，请稍等......</div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="./img/222.jpg">
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <!-- 右手边的下面轮播图 -->
+            <div class="swiper-container" id="swiper3">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide noe">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide two">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide three">
+                        <div>正在加载，请稍等......</div>
+                    </div>
+
+                    <div class="swiper-slide four">
+                        <div>正在加载，请稍等......</div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="./img/333.jpg">
-                </div>
-                <div class="item">
-                    <img src="./img/444.jpg">
-                </div>
-                <div class="item">
-                    <img src="./img/555.jpg">
-                </div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="ydlm-section-img">
+                <img src="./img/senogilvy_bg.jpg" alt="">
+
+            </div>
+            <!-- 这个是遮罩层，鼠标已过去，现在出来 -->
+            <div id="ydlm-section-div" class="">
+                <!-- <i></i> -->
+                <p>正在加载，请稍等......</p>
+                <p>正在加载，请稍等......</p>
+                <p>正在加载，请稍等......</p>
+            </div>
+
+            <!-- 4个DIV，是放内容的 -->
+            <!-- <div>            
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div> -->
-        <!-- <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="pc-img" style="background-image:url(./img/1.png)"></div>
-                    </div>
-                    <div class="item">
-                        <div class="pc-img" style="background-image:url(./img/222.jpg)"></div>
-                    </div>
-                    <div class="item">
-                        <div class="pc-img" style="background-image:url(./img/333.jpg)"></div>
-                    </div>
-                    <div class="item">
-                        <div class="pc-img" style="background-image:url(./img/444.jpg)"></div>
+
+        </section>
+        <!-- 轮播图下面的第一部分内容结束 -->
+
+        <!-- 轮播图下面的第二部分内容开始 -->
+        <section class="section">
+            <div class="section-left">
+                <div>
+                    <p>正在加载，请稍等......</p>
+                </div>
+            </div>
+
+            <div class="section-right">
+                <img src="./img/sanya1_bg-1.jpg" alt="">
+                <div class="section-right-bgc">
+                    <p>正在加载，请稍等......</p>
+                    <!--临时的-->
+                </div>
+                <!--鼠标已过去，遮罩层-->
+            </div>
+        </section>
+        <!-- 轮播图下面的第二部分内容结束 -->
+
+
+        <!-- 底部开始 -->
+        <footer>
+            <!-- 底部上面左边 -->
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-top-left-conter">
+                        <h3>需要什么帮忙</h3>
+                        <div>
+                            <a href="javascript:;">查看我们的作品
+                                <i class="glyphicon glyphicon-play"></i>
+                            </a>
+                            <a href="javascript:;">联系我们
+                                <i class="glyphicon glyphicon-play"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-        </div> -->
-
-
-
-        <!-- ``````````````````````````````````` -->
-        <!-- 轮播图的html -->
-        <div class="parent">
-            <div class="slider">
-                <button type="button" id="right" class="right" name="button">
-                   <svg version="1.1" id="Capa_1" width="40px" height="40px " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                   <g>
-                    <path style="fill: #9d9d9d;" d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                      c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-                      "/>
-                   </g>
-                   </svg>
-                   </button>
-                <button type="button" id="left" class="left" name="button">
-                   <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                   <g>
-                    <path style="fill: #9d9d9d;" d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                      c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
-                   </g>
-                   </svg>
-                   </button>
-                <svg id="svg2" class="up2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id="circle1" class="circle1 steap" cx="34px" cy="49%" r="20" />
-                    <circle id="circle2" class="circle2 steap" cx="34px" cy="49%" r="100" />
-                    <circle id="circle3" class="circle3 steap" cx="34px" cy="49%" r="180" />
-                    <circle id="circle4" class="circle4 steap" cx="34px" cy="49%" r="260" />
-                    <circle id="circle5" class="circle5 steap" cx="34px" cy="49%" r="340" />
-                    <circle id="circle6" class="circle6 steap" cx="34px" cy="49%" r="420" />
-                    <circle id="circle7" class="circle7 steap" cx="34px" cy="49%" r="500" />
-                    <circle id="circle8" class="circle8 steap" cx="34px" cy="49%" r="580" />
-                    <circle id="circle9" class="circle9 steap" cx="34px" cy="49%" r="660" />
-                </svg>
-                <svg id="svg1" class="up2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <circle id="circle10" class="circle10 steap" cx="648px" cy="49%" r="20" />
-                    <circle id="circle11" class="circle11 steap" cx="648px" cy="49%" r="100" />
-                    <circle id="circle12" class="circle12 steap" cx="648px" cy="49%" r="180" />
-                    <circle id="circle13" class="circle13 steap" cx="648px" cy="49%" r="260" />
-                    <circle id="circle14" class="circle14 steap" cx="648px" cy="49%" r="340" />
-                    <circle id="circle15" class="circle15 steap" cx="648px" cy="49%" r="420" />
-                    <circle id="circle16" class="circle16 steap" cx="648px" cy="49%" r="500" />
-                    <circle id="circle17" class="circle17 steap" cx="648px" cy="49%" r="580" />
-                    <circle id="circle18" class="circle18 steap" cx="648px" cy="49%" r="660" />
-                </svg>
-                <div id="slide1" class="slide1 up1">1</div>
-                <div id="slide2" class="slide2">2</div>
-                <div id="slide3" class="slide3">3</div>
-                <div id="slide4" class="slide4">4</div>
-                <!-- <div id="slide5" class="slide5">5</div> -->
-            </div>
-        </div>
-
-        <!-- ``````````````````````````````````` -->
-    </section>
-    <!-- 轮播图结束 -->
-
-
-    <!-- 公司简介的内容开始 -->
-    <section class="profile">
-        <div class="profile-left">
-            <ul>
-                <li class="active1">公司简介</li>
-                <li>企业文化</li>
-                <li>企业成果</li>
-            </ul>
-        </div>
-
-        <div class="profile-right">
-            <div class="profile-right-top main">
-                <img src="./img/senyu.jpg" alt="">
-                <p>广州市森宇软件科技有限公司是一家综合性高新技术企业，软件开发为主体，项目需求软件可针对性开发，业务涵盖计算机系统、弱电智能</p>
-                <p>化系统、智能安防系统、智能交通系统的建设及集成服务，提供从产品研发、工程咨询、系统设计、工程建设到系统运维保障的完善服务及</p>
-                <p>整体解决方公司业务覆盖：智能大厦、智能厂区、智能化小区弱电系统、综合布线、计算机网络系统、闭路监控系统、防盗报警系统、门禁、</p>
-                <p>考勤一卡通系统、停车场系统、酒店收费系统，卡拉OK点歌系统、公共广播、背景音乐系统、有线电视、视频会议声讯系统；IC卡、可视对</p>
-                <p>讲系统、集团电话、物流系统、快递实名制登记系统、接地、防雷工程、光纤布线及测试项目，专业从事智能安防产品研发、生产、销售及</p>
-                <p>售后一体化拥有自主知识产权的企业。 我公司秉承“以质为根、以人为本、技术立业、服务社会”的质量方针，拥有先进的开发理念和丰富</p>
-                <p>的系统集成经验，以高科技手段、精良的产品、专业化的服务为客户创造价值,本公司拥有专业的项目经理和技术施工人员多人，向客户提供</p>
-                <p>优质专业的设计、安装、调试、售后等专业服务。 公司成立以来，从器材选购、安装调试入手，以良好的信誉及工程质量赢得了众多用户的</p>
-                <p>一致好评，已完成省内外多项重点安防项目。我们秉承真诚合作精神向广大客户提供相关的系统解决方案，设备销售及技术支持。本公司本</p>
-                <p>着低成本，高效率，先进性，安全性，可靠性的原则，力求项目的高质量完成。</p>
-            </div>
-            <br>
-            <div class="profile-right-center hide main">
-                第二页面--暂时为更新消息,敬请期待!
+                <!-- 底部上面右边 -->
+                <div class="footer-top-right">
+                    <div class="footer-top-right-conter">
+                            <h3>关注我们</h3>
+                            <div>
+                                    <i></i>
+                            </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="profile-right-footer hide main">
-                第三页面--暂时为更新消息,敬请期待!
+            <!-- 底部下面 -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <ul>
+                        <li>敬请期待</li>
+                        <li>敬请期待</li>
+                        <li>敬请期待</li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-bottom-right">
+                    <a href="#top"><i class="glyphicon glyphicon-menu-up"></i></a>
+                </div>
+            
             </div>
-        </div>
-    </section>
-    <!-- 公司简介的内容结束 -->
+        </footer>
+
+
+        <!-- 底部结束 -->
+
+
+    </div>
+    <!-- 大div去包裹里面的内容 -->
 
 
 
 
 
-
-
-
-
-    <!-- 底部开始 -->
-    <footer class="container-footer">
-        <div class="row">
-            <div class="col-md-6 footer-top">
-                <p>广州市森宇软件科技有限公司 备案号：粤ICP备xxxxxxxxx号</p>
-                <p>服务热线：020-36855916 传真：020-36822335</p>
-                <p>地址：广州市花都区曙光大道77号广信商务大厦8F</p>
-                <p>网址：www.senyu168.com 技术支持：百为网络</p>
-            </div>
-            <div class="col-md-6 footer-bottom">
-                <img src="./img/code.jpg" alt="">
-            </div>
-        </div>完成后，上面跳白色行，可以去公共部分删除。
-
-
-
-
-    </footer>
-    <!-- 底部结束 -->
-
-
-
-
-
-
-
-    <!-- 引入jquery库-->
+    <!-- 注意： bootstrap框架 依赖于 jquery  务必先引入-->
     <script src="lib/jquery/jquery.min.js"></script>
-    <!-- Bootstrap的js -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap的核心js -->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入swiper的js -->
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/swiper.animate1.0.2.min.js"></script>
+    <!-- 引入字体的js -->
+    <script src="./js/viewport.js"></script>
+
+    <!-- 引入公共的JS -->
+    <!-- <script src="./js/base.js"></script> -->
+
     <!--要引入自己的JS文件 -->
-    <script src="./js/slideshow.js"></script>
-    <!--轮播图的js-->
     <script src="./js/index.js"></script>
 
+    <script>
+    </script>
 </body>
 
 </html>
